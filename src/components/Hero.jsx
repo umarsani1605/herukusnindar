@@ -12,8 +12,8 @@ function Hero() {
       <div className="h-full pt-24 pb-14 gap-24 flex flex-col justify-center align-middle">
         <NavigationBar></NavigationBar>
         <div className="flex flex-col max-w-[85rem] w-2/3 mx-auto z-10 gap-4">
-          <span className="block font-bold text-white text-4xl"><em>Ketua DPRD Ngawi</em></span>
-          <span className="block font-black text-white text-xl md:text-7xl">
+          <span className="block font-bold text-white text-5xl"><em>Ketua DPRD Ngawi</em></span>
+          <span className="block font-black text-white text-xl md:text-8xl">
             <em>HERU KUSNINDAR</em>
           </span>
         </div>

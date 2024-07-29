@@ -7,12 +7,11 @@ export default function Programs() {
   return (
     <div className="bg-slate-200/75">
       {/* Icon Blocks */}
-      <div className="max-w-[45%] px-4 py-10 sm:px-6 lg:px-8 lg:pb-48 mx-auto">
+      <div className="max-w-[45%] px-4 py-10 sm:px-6 lg:px-8 lg:pb-48 mx-auto text-lg">
         <div className="flex flex-col gap-4 items-center w-full mb-16">
-          <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
+          <h2 className="font-bold text-3xl lg:text-6xl inline-block py-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
             Program
           </h2>
-          <hr class="border-red-500 border-4 w-16"></hr>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 items-center gap-6 md:gap-y-10 md:gap-x-10">
           {/* Card */}
