@@ -1,15 +1,16 @@
-import BiographyImg from '../assets/biography.png';
+import BiographyImg from '../assets/images/bio/bio.png';
 
 export default function Biography() {
   return (
     <>
       {/* Features */}
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-32 mx-auto">
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-48 mx-auto">
         {/* Grid */}
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="flex justify-center">
             <img
-              className="rounded-xl h-72"
+              className="rounded-xl h-[400px]"
+              // style={{boxShadow: '0 8px 60px 0 rgba(103,151,255,.2),0 12px 90px 0 rgba(103,151,255,.2)'}}
               src={BiographyImg}
               alt="Features Image"
             />
@@ -24,7 +25,10 @@ export default function Biography() {
                 </h2>
                 <hr class="border-red-500 border-4 w-16"></hr>
                 <p className="text-gray-500 !mt-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor. Phasellus eu ex eget nisi cursus ornare. Quisque nec rutrum mauris, et viverra nulla. Curabitur aliquam odio eu tellus tempus rhoncus. Aenean et metus non neque vestibulum ullamcorper. Morbi pellentesque lorem enim, nec porta enim lacinia vel.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor. Phasellus eu ex eget nisi cursus ornare. Quisque nec rutrum mauris, et viverra nulla. Curabitur aliquam odio eu tellus tempus rhoncus. Aenean et metus non neque vestibulum ullamcorper. Morbi pellentesque lorem enim, nec porta enim lacinia vel.
+                </p>
+                <p className="text-gray-500">
+                  Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor. Phasellus eu ex eget nisi cursus ornare. Quisque nec rutrum mauris, et viverra nulla. Curabitur aliquam odio eu tellus tempus rhoncus.
                 </p>
               </div>
               {/* End Title */}

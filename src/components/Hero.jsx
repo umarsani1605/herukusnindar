@@ -2,13 +2,13 @@ import NavigationBar from './NavigationBar'
 
 import heroBg from '../assets/ngawi.png'
 import profile from '../assets/profile.png'
-import topWave from '../assets/top-wave.png'
-import bottomWave from '../assets/bottom-wave.png'
+import topWave from '../assets/top-wave.svg'
+import bottomWave from '../assets/bottom-wave.svg'
 
 function Hero() {
 
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div className="relative h-dvh overflow-hidden">
       <div className="h-full pt-24 pb-14 gap-24 flex flex-col justify-center align-middle">
         <NavigationBar></NavigationBar>
         <div className="flex flex-col max-w-[85rem] w-2/3 mx-auto z-10 gap-4">
@@ -24,7 +24,10 @@ function Hero() {
           <span>Kenali lebih dekat</span>
         </div>
       </div>
-      <img className='absolute top-0 w-full -z-10' src={heroBg} alt="" />
+      <img className='absolute top-0 w-full z-10' src={topWave} alt="" />
+      <div className='absolute top-0 w-full h-dvh -z-10 bg-cover bg-fixed bg-top' style={{backgroundImage: `url(${heroBg})`}}></div>
+      <img className='absolute bottom-0 w-full z-20' src={bottomWave} alt="" />
+      <img className='absolute bottom-20 right-0 h-[750px] z-10' src={profile} alt="" />
     </div>
   )
 }

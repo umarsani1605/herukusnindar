@@ -1,8 +1,10 @@
+import AwardsImg from '../assets/images/awards/awards.png';
+
 export default function Awards() {
   return (
-    <div className="bg-slate-200/75">
+    <div>
       {/* Features */}
-      <div className=" max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-32 mx-auto">
+      <div className=" max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pb-96 mx-auto overflow-hidden">
         {/* Grid */}
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           {/* End Col */}
@@ -27,10 +29,10 @@ export default function Awards() {
               {/* End Title */}
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="relative flex justify-center h-full">
             <img
-              className="rounded-xl h-72"
-              src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80"
+              className="absolute rounded-xl -bottom-[120%] h-[800px]"
+              src={AwardsImg}
               alt="Features Image"
             />
           </div>

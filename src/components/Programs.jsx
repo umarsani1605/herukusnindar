@@ -5,18 +5,18 @@ export default function Programs() {
   }
 
   return (
-    <>
+    <div className="bg-slate-200/75">
       {/* Icon Blocks */}
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-24 mx-auto">
-        <div className="flex flex-col gap-4 align-middle w-full mb-8">
+      <div className="max-w-[45%] px-4 py-10 sm:px-6 lg:px-8 lg:pb-48 mx-auto">
+        <div className="flex flex-col gap-4 items-center w-full mb-16">
           <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
             Program
           </h2>
           <hr class="border-red-500 border-4 w-16"></hr>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 items-center gap-6 md:gap-y-10 md:gap-x-24">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 items-center gap-6 md:gap-y-10 md:gap-x-10">
           {/* Card */}
-          <div className="size-full bg-white rounded-lg p-5" style={cardShadow}>
+          <div className="size-full bg-white rounded-lg p-5" style={{boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)'}}>
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -50,7 +50,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={cardShadow}>
+          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)'}}>
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -82,7 +82,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={cardShadow}>
+          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)'}}>
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -116,7 +116,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={cardShadow}>
+          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)'}}>
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -151,6 +151,6 @@ export default function Programs() {
         </div>
       </div>
       {/* End Icon Blocks */}
-    </>
+    </div>
   )
 }
