@@ -1,12 +1,13 @@
 import AwardsImg from '../assets/images/awards/awards.png';
+import Lines from '../assets/lines.svg';
 
 export default function Awards() {
   return (
-    <div>
+    <div className='relative'>
       {/* Features */}
-      <div className=" max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pb-96 mx-auto overflow-hidden text-lg">
+      <div className=" max-w-[85rem] px-4 py-10 sm:px-6 md:pb-64 lg:px-8 mx-auto overflow-hidden text-lg">
         {/* Grid */}
-        <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+        <div className="relative md:flex md:items-center md:gap-12">
           {/* End Col */}
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
@@ -28,18 +29,19 @@ export default function Awards() {
               {/* End Title */}
             </div>
           </div>
-          <div className="relative flex justify-center h-full">
             <img
-              className="absolute rounded-xl -bottom-[120%] h-[800px]"
+              className="absolute right-0 h-[1000px]"
               src={AwardsImg}
               alt="Features Image"
             />
-          </div>
           {/* End Col */}
         </div>
         {/* End Grid */}
       </div>
       {/* End Features */}
+      <div>
+        <img src={Lines} className='w-full absolute -top-[80%] -z-20' alt="" />
+      </div>
     </div>
 
   )

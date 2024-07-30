@@ -1,3 +1,4 @@
+
 export default function Programs() {
 
   const cardShadow = {
@@ -15,7 +16,7 @@ export default function Programs() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 items-center gap-6 md:gap-y-10 md:gap-x-10">
           {/* Card */}
-          <div className="size-full bg-white rounded-lg p-5" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+          <div className="size-full bg-white shadow-blue rounded-lg p-5 hover:-translate-y-1 transition ease-in-out">
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -49,7 +50,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+          <div className="size-full bg-white shadow-blue rounded-lg p-5 hover:-translate-y-1 transition ease-in-out">
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -81,7 +82,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+          <div className="size-full bg-white shadow-blue rounded-lg p-5 hover:-translate-y-1 transition ease-in-out">
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg
@@ -115,7 +116,7 @@ export default function Programs() {
           </div>
           {/* End Card */}
           {/* Card */}
-          <div className="size-full bg-white shadow-md rounded-lg p-5" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+          <div className="size-full bg-white shadow-blue rounded-lg p-5 hover:-translate-y-1 transition ease-in-out">
             <div className="flex items-center gap-x-4 mb-3">
               <div className="inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100">
                 <svg

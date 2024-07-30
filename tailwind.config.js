@@ -1,3 +1,5 @@
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -15,7 +17,11 @@ export default {
         '3/2': '3 / 2',
         '4/3': '4 / 3',
       },
+      boxShadow: {
+        'blue-light': '0px 2px 6px 0px rgba(103, 151, 255, 0.1), 0px 3px 16px 0px rgba(103, 151, 255, 0.1)',
+        'blue': '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)',
+        'blue-bold': '0 8px 48px 0 rgba(103,151,255,.15), 0 24px 128px 0 rgba(103,151,255,.15)',
+      },
     },
   },
-  plugins: [],
 }
