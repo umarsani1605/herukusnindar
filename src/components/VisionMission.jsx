@@ -3,26 +3,25 @@ export default function VisionMission() {
     <div className="bg-slate-200/75">
       {/* Icon Blocks */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-24 mx-auto text-lg">
-        <div className="flex justify-center mx-auto gap-12">
+        <div className="grid grid-cols-2 mx-auto gap-12">
           {/* Grid */}
-          <div className="flex flex-col gap-12 bg-white p-14 rounded-xl w-[60%]" style={{boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)'}}>
-            <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col gap-12 bg-white p-14 rounded-xl h-fit pb-32" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+            <div className="flex flex-col">
               <h2 className="font-bold text-3xl lg:text-6xl inline-block py-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
                 Visi
               </h2>
               <p className="mt-3 text-gray-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor.
               </p>
             </div>
-            <div className="flex flex-col items-center">
-              <hr className="border-gray-200 w-[60%]" />
-            </div>
-            <div className="flex flex-col items-center text-center">
+          </div>
+          <div className="flex flex-col gap-12 bg-white p-14 rounded-xl" style={{ boxShadow: '0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1)' }}>
+            <div className="flex flex-col">
               <h2 className="font-bold text-3xl lg:text-6xl inline-block py-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
                 Misi
               </h2>
               <p className="mt-3 text-gray-800">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor.
               </p>
             </div>
             <div className="space-y-6 lg:space-y-10">
