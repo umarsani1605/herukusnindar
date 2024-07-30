@@ -16,4 +16,13 @@
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
+<script>
+  let playAudio = () => {
+    let bgm = document.getElementById("bgm");
+    bgm.play();
+  }
+
+  setInterval(playAudio, 1000);
+</script>
+
 </html>
