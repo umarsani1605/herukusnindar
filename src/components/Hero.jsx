@@ -1,35 +1,59 @@
-import NavigationBar from './NavigationBar'
+import NavigationBar from "./NavigationBar";
 
-import heroBg from '../assets/ngawi.png'
-import profile from '../assets/profile.png'
-import topWave from '../assets/top-wave.svg'
-import bottomWave from '../assets/bottom-wave.svg'
+import heroBg from "../assets/ngawi.png";
+import profile from "../assets/profile.png";
+import topWave from "../assets/top-wave.svg";
+import bottomWave from "../assets/bottom-wave.svg";
 
 function Hero() {
-
   return (
-    <div className="relative h-dvh overflow-hidden">
-      <div className="h-full pt-24 pb-14 gap-24 flex flex-col justify-center align-middle">
+    <div className="relative h-[500px] overflow-hidden lg:h-dvh">
+      <div className="flex h-full flex-col justify-between pb-14 pt-0 align-middle md:justify-center lg:gap-24 lg:pb-14 lg:pt-24 lg:align-middle">
         <NavigationBar></NavigationBar>
-        <div className="flex flex-col max-w-[85rem] w-2/3 mx-auto z-10 gap-4">
-          <span className="block font-bold text-white text-5xl"><em>Ketua DPRD Ngawi</em></span>
-          <span className="block font-black text-white text-xl md:text-8xl">
+        <div className="z-20 mx-auto flex w-5/6 flex-col gap-6 lg:z-10 lg:mx-auto lg:flex lg:w-2/3 lg:max-w-[85rem] lg:flex-col lg:gap-4">
+          <span className="block text-2xl font-bold text-white drop-shadow-lg lg:text-5xl lg:font-bold lg:text-white">
+            <em>Ketua DPRD Ngawi</em>
+          </span>
+          <span className="block text-6xl font-black text-white drop-shadow-lg md:text-8xl">
             <em>HERU KUSNINDAR</em>
           </span>
         </div>
-        <div className='mx-auto w-2/3 max-w-[85rem] text-white cursor-pointer'>
-          <svg className='inline mr-2' width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15V9ZM12 4C9.23858 4 7 6.23858 7 9V15C7 17.7614 9.23858 20 12 20C14.7614 20 17 17.7614 17 15V9C17 6.23858 14.7614 4 12 4ZM12 7C12.5523 7 13 7.44772 13 8V11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11V8C11 7.44772 11.4477 7 12 7Z" fill="#fff"/>
+        <div className="mx-auto hidden md:w-2/3 md:max-w-[85rem] md:cursor-pointer md:text-white lg:block lg:w-2/3 lg:max-w-[85rem] lg:cursor-pointer lg:text-white">
+          <svg
+            className="mr-2 inline"
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15V9ZM12 4C9.23858 4 7 6.23858 7 9V15C7 17.7614 9.23858 20 12 20C14.7614 20 17 17.7614 17 15V9C17 6.23858 14.7614 4 12 4ZM12 7C12.5523 7 13 7.44772 13 8V11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11V8C11 7.44772 11.4477 7 12 7Z"
+              fill="#fff"
+            />
           </svg>
           <span>Kenali lebih dekat</span>
         </div>
       </div>
-      <img className='absolute top-0 w-full z-10' src={topWave} alt="" />
-      <div className='absolute top-0 w-full h-dvh -z-10 bg-cover bg-fixed bg-top' style={{backgroundImage: `url(${heroBg})`}}></div>
-      <img className='absolute bottom-0 w-full z-20' src={bottomWave} alt="" />
-      <img className='absolute bottom-20 right-0 h-[750px] z-10' src={profile} alt="" />
+      <img
+        className="absolute -left-24 top-0 z-10 w-[1000px] !max-w-none lg:top-0 lg:z-10 lg:w-full"
+        src={topWave}
+        alt="top-wave"
+      />
+      <div
+        className="absolute top-0 -z-10 h-dvh w-full bg-cover bg-fixed bg-top"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      ></div>
+      <img className="absolute bottom-0 z-20 w-full" src={bottomWave} alt="" />
+      <img
+        className="absolute bottom-0 right-0 z-10 h-[450px] lg:bottom-20 lg:right-0 lg:z-10 lg:h-[750px]"
+        src={profile}
+        alt="heru-kusnindar"
+      />
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

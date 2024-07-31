@@ -2,13 +2,13 @@ export default function NavigationBar() {
   return (
     <>
       {/* ========== HEADER ========== */}
-      <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-        <nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center gap-x-1">
+      <header className="z-50 flex w-full flex-wrap md:flex-nowrap md:justify-start">
+        <nav className="relative mx-auto w-5/6 py-2 pt-20 sm:px-6 md:flex md:items-center md:justify-between md:gap-3 lg:max-w-[85rem] lg:px-8">
+          <div className="flex items-center justify-between gap-x-1">
             {/* Collapse Button */}
             <button
               type="button"
-              className="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-white hover:bg-gray-100/10 focus:outline-none focus:bg-gray-100/10 disabled:opacity-50 disabled:pointer-events-none"
+              className="hs-collapse-toggle relative flex size-9 items-center justify-center rounded-lg text-[12px] font-medium text-white hover:bg-gray-100/10 focus:bg-gray-100/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50 md:hidden"
               id="hs-header-base-collapse"
               aria-expanded="false"
               aria-controls="hs-header-base"
@@ -32,7 +32,7 @@ export default function NavigationBar() {
                 <line x1={3} x2={21} y1={18} y2={18} />
               </svg>
               <svg
-                className="hs-collapse-open:block shrink-0 hidden size-4"
+                className="hs-collapse-open:block hidden size-4 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -53,20 +53,20 @@ export default function NavigationBar() {
           {/* Collapse */}
           <div
             id="hs-header-base"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block "
+            className="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 md:block"
             aria-labelledby="hs-header-base-collapse"
           >
-            <div className="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100/10 [&::-webkit-scrollbar-thumb]:bg-gray-300">
-              <div className="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
+            <div className="max-h-[75vh] overflow-hidden overflow-y-auto [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-track]:bg-gray-100/10 [&::-webkit-scrollbar]:w-2">
+              <div className="flex flex-col gap-0.5 py-2 md:flex-row md:items-center md:gap-1 md:py-0">
                 <div className="grow">
-                  <div className="flex flex-col md:flex-row  md:items-center gap-0.5 md:gap-1">
+                  <div className="flex flex-col gap-0.5 md:flex-row md:items-center md:gap-1">
                     <a
-                      className="p-2 flex items-center text-sm text-white hover:bg-gray-100/10 rounded-lg focus:outline-none focus:bg-gray-100/10"
+                      className="flex items-center rounded-lg p-2 text-sm text-white hover:bg-gray-100/10 focus:bg-gray-100/10 focus:outline-none"
                       href="#"
                       aria-current="page"
                     >
                       <svg
-                        className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                        className="me-3 block size-4 shrink-0 md:me-2 md:hidden"
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}
                         height={24}
@@ -83,11 +83,11 @@ export default function NavigationBar() {
                       Beranda
                     </a>
                     <a
-                      className="p-2 flex items-center text-sm text-white hover:bg-gray-100/10 rounded-lg focus:outline-none focus:bg-gray-100/10"
+                      className="flex items-center rounded-lg p-2 text-sm text-white hover:bg-gray-100/10 focus:bg-gray-100/10 focus:outline-none"
                       href="#"
                     >
                       <svg
-                        className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                        className="me-3 block size-4 shrink-0 md:me-2 md:hidden"
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}
                         height={24}
@@ -104,11 +104,11 @@ export default function NavigationBar() {
                       Biografi
                     </a>
                     <a
-                      className="p-2 flex items-center text-sm text-white hover:bg-gray-100/10 rounded-lg focus:outline-none focus:bg-gray-100/10"
+                      className="flex items-center rounded-lg p-2 text-sm text-white hover:bg-gray-100/10 focus:bg-gray-100/10 focus:outline-none"
                       href="#"
                     >
                       <svg
-                        className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                        className="me-3 block size-4 shrink-0 md:me-2 md:hidden"
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}
                         height={24}
@@ -127,11 +127,11 @@ export default function NavigationBar() {
                       Prestasi
                     </a>
                     <a
-                      className="p-2 flex items-center text-sm text-white hover:bg-gray-100/10 rounded-lg focus:outline-none focus:bg-gray-100/10"
+                      className="flex items-center rounded-lg p-2 text-sm text-white hover:bg-gray-100/10 focus:bg-gray-100/10 focus:outline-none"
                       href="#"
                     >
                       <svg
-                        className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
+                        className="me-3 block size-4 shrink-0 md:me-2 md:hidden"
                         xmlns="http://www.w3.org/2000/svg"
                         width={24}
                         height={24}
@@ -159,5 +159,5 @@ export default function NavigationBar() {
       </header>
       {/* ========== END HEADER ========== */}
     </>
-  )
+  );
 }

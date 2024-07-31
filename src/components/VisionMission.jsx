@@ -1,106 +1,66 @@
+import { Icon } from "@iconify/react";
+
 export default function VisionMission() {
+  const missions = [
+    {
+      icon: "heroicons:academic-cap",
+      name: "Lorem ipsum dolor sit amet",
+    },
+    {
+      icon: "heroicons:building-storefront",
+      name: "Consectetur adipiscing elit",
+    },
+    {
+      icon: "heroicons:scale",
+      name: "Mauris quis ultricies dui",
+    },
+    {
+      icon: "heroicons:presentation-chart-line",
+      name: "Sed aliquet eros nec eros venenatis",
+    },
+  ];
+
   return (
     <div className="bg-slate-200/75">
       {/* Icon Blocks */}
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-24 mx-auto text-lg">
-        <div className="grid grid-cols-2 mx-auto gap-12">
+      <div className="mx-auto max-w-[85rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:py-24">
+        <div className="mx-auto grid gap-12 md:grid-cols-2">
           {/* Grid */}
-          <div className="flex flex-col gap-12 bg-white p-14 rounded-xl shadow-blue hover:-translate-y-1 transition ease-in-out hover:shadow-blue-bold">
+          <div className="flex flex-col gap-12 rounded-xl bg-white p-14 shadow-blue transition ease-in-out hover:-translate-y-1 hover:shadow-blue-bold">
             <div className="flex flex-col">
-              <h2 className="font-bold text-3xl lg:text-6xl inline-block py-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
+              <h2 className="inline-block bg-gradient-to-r from-red-600 to-red-400 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
                 Visi
               </h2>
               <p className="mt-3 text-gray-800">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ultricies dui. Sed aliquet eros nec eros venenatis blandit. Sed posuere purus quis arcu vulputate molestie. Fusce fermentum ac augue in dignissim. Sed tincidunt quis lectus ut pharetra. Sed nec sapien vitae erat tincidunt feugiat in a dolor.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                quis ultricies dui. Sed aliquet eros nec eros venenatis blandit.
+                Sed posuere purus quis arcu vulputate molestie. Fusce fermentum
+                ac augue in dignissim. Sed tincidunt quis lectus ut pharetra.
+                Sed nec sapien vitae erat tincidunt feugiat in a dolor.
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-12 bg-white p-14 rounded-xl shadow-blue hover:-translate-y-1 transition ease-in-out hover:shadow-blue-bold">
+          <div className="flex flex-col gap-12 rounded-xl bg-white p-14 shadow-blue transition ease-in-out hover:-translate-y-1 hover:shadow-blue-bold">
             <div className="flex flex-col">
-              <h2 className="font-bold text-3xl lg:text-6xl inline-block py-4 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">
+              <h2 className="inline-block bg-gradient-to-r from-red-600 to-red-400 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
                 Misi
               </h2>
             </div>
             <div className="space-y-6 lg:space-y-10">
-              {/* Icon Block */}
-              <div className="flex gap-x-5 sm:gap-x-8">
-                <svg
-                  className="shrink-0 mt-2 size-6 text-gray-800"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
-                  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
-                  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
-                  <path d="M10 6h4" />
-                  <path d="M10 10h4" />
-                  <path d="M10 14h4" />
-                  <path d="M10 18h4" />
-                </svg>
-                <div className="grow">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">
-                    High quality Co-Living spaces
-                  </h3>
+              {missions.map((mission) => (
+                <div className="flex gap-x-5 sm:gap-x-8">
+                  <Icon
+                    icon={mission.icon}
+                    width="1.75rem"
+                    color="#1f2937"
+                  ></Icon>
+                  <div className="grow">
+                    <h3 className="text-base font-semibold text-gray-800 sm:text-lg">
+                      {mission.name}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              {/* End Icon Block */}
-              {/* Icon Block */}
-              <div className="flex gap-x-5 sm:gap-x-8">
-                <svg
-                  className="shrink-0 mt-2 size-6 text-gray-800"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx={9} cy={7} r={4} />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-                <div className="grow">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">
-                    Fostering vibrant communities
-                  </h3>
-                </div>
-              </div>
-              {/* End Icon Block */}
-              {/* Icon Block */}
-              <div className="flex gap-x-5 sm:gap-x-8">
-                <svg
-                  className="shrink-0 mt-2 size-6 text-gray-800"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M7 10v12" />
-                  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                </svg>
-                <div className="grow">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">
-                    Simple and all-inclusive
-                  </h3>
-                </div>
-              </div>
-              {/* End Icon Block */}
+              ))}
             </div>
           </div>
           {/* End Grid */}
@@ -108,6 +68,5 @@ export default function VisionMission() {
       </div>
       {/* End Icon Blocks */}
     </div>
-
-  )
+  );
 }
