@@ -65,16 +65,16 @@ export default function Articles() {
   return (
     <>
       {/* Features */}
-      <div className="mx-auto w-5/6 max-w-[85rem] py-10 text-lg sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-[85rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:py-24">
         {/* Card Grid */}
         <div className="w-full gap-4 pb-6 align-middle">
           <div className="space-y-2 text-center md:space-y-4">
-            <h2 className="inline-block bg-gradient-to-r from-red-600 to-red-400 bg-clip-text py-4 text-3xl font-bold text-transparent lg:text-6xl">
+            <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
               Blog
             </h2>
           </div>
         </div>
-        <div className="grid gap-4 py-4 pb-6 sm:gap-6 md:grid-cols-4 md:gap-8 lg:gap-4">
+        <div className="grid grid-cols-2 gap-4 py-4 pb-6 lg:grid-cols-4 lg:gap-8">
           {articles.slice(0, 4).map((article) => (
             <a
               className="group flex flex-col rounded-2xl border-[1px] border-slate-200 p-4 focus:outline-none"
@@ -88,11 +88,11 @@ export default function Articles() {
                 />
               </div>
               <div className="pt-4">
-                <h3 className="relative inline-block text-lg font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:bg-red-500 before:transition group-hover:before:scale-x-100">
+                <h3 className="relative inline-block text-lg font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:bg-slate-800 before:transition group-hover:before:scale-x-100">
                   {article.title}
                 </h3>
-                <p className="mt-1 text-gray-600">
-                  {truncate(article.content, 60, true)}
+                <p className="mt-1 text-base text-gray-600">
+                  {truncate(article.content, 50, true)}
                 </p>
               </div>
             </a>

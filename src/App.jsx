@@ -1,18 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import NavigationBar from './components/NavigationBar'
-import Hero from './components/Hero'
-import Biography from './components/Biography'
-import Awards from './components/Awards'
-import Blog from './components/Blog'
-import VisionMission from './components/VisionMission'
-import Programs from './components/Programs'
-import Footer from './components/Footer'
+import NavigationBar from "./components/NavigationBar";
+import Hero from "./components/Hero";
+import Biography from "./components/Biography";
+import Awards from "./components/Awards";
+import Blog from "./components/Blog";
+import VisionMission from "./components/VisionMission";
+import Programs from "./components/Programs";
+import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <>
+      <NavigationBar></NavigationBar>
       <Hero></Hero>
       <Biography></Biography>
       <Awards></Awards>
@@ -21,7 +21,7 @@ function App() {
       <Blog></Blog>
       <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

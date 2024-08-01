@@ -7,9 +7,8 @@ import bottomWave from "../assets/bottom-wave.svg";
 
 function Hero() {
   return (
-    <div className="relative h-[500px] overflow-hidden lg:h-dvh">
-      <div className="flex h-full flex-col justify-between pb-14 pt-0 align-middle md:justify-center lg:gap-24 lg:pb-14 lg:pt-24 lg:align-middle">
-        <NavigationBar></NavigationBar>
+    <div className="relative h-[550px] overflow-hidden lg:h-dvh">
+      <div className="flex h-full flex-col justify-end pb-14 pt-0 align-middle md:justify-center lg:gap-24 lg:pb-14 lg:pt-24 lg:align-middle">
         <div className="z-20 mx-auto flex w-5/6 flex-col gap-6 lg:z-10 lg:mx-auto lg:flex lg:w-2/3 lg:max-w-[85rem] lg:flex-col lg:gap-4">
           <span className="block text-2xl font-bold text-white drop-shadow-lg lg:text-5xl lg:font-bold lg:text-white">
             <em>Ketua DPRD Ngawi</em>
@@ -37,11 +36,11 @@ function Hero() {
           <span>Kenali lebih dekat</span>
         </div>
       </div>
-      <img
-        className="absolute -left-24 top-0 z-10 w-[1000px] !max-w-none lg:top-0 lg:z-10 lg:w-full"
+      {/* <img
+        className="absolute -left-24 top-0 z-10 w-[1000px] !max-w-none md:left-0 md:w-full lg:top-0 lg:z-10"
         src={topWave}
         alt="top-wave"
-      />
+      /> */}
       <div
         className="absolute top-0 -z-10 h-dvh w-full bg-cover bg-fixed bg-top"
         style={{ backgroundImage: `url(${heroBg})` }}

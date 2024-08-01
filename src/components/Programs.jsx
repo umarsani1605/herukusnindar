@@ -20,7 +20,7 @@ export default function Programs() {
       id: 3,
       title: "Donec eu velit id libero dapibus",
       description:
-        "Integer ac risus in dui egestas mollis. Nunc molestie erat non sapien malesuada.",
+        "Integer ac risus in dui egestas mollis. Nunc molestie erat non sapien.",
       icon: "heroicons:scale",
     },
     {
@@ -36,8 +36,8 @@ export default function Programs() {
     <div className="bg-slate-200/75">
       {/* Icon Blocks */}
       <div className="mx-auto max-w-[85rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-48">
-        <div className="mb-16 flex w-full flex-col items-center gap-4">
-          <h2 className="inline-block bg-gradient-to-r from-red-600 to-red-400 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
+        <div className="mb-12 flex w-full flex-col items-center gap-4">
+          <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
             Program
           </h2>
         </div>
@@ -45,8 +45,8 @@ export default function Programs() {
           {programs.map((program) => (
             <div className="size-full rounded-lg bg-white p-5 shadow-blue transition ease-in-out hover:-translate-y-1">
               <div className="mb-3 flex items-center gap-x-4">
-                <div className="inline-flex size-[62px] items-center justify-center rounded-full border-4 border-red-50 bg-red-100">
-                  <Icon icon={program.icon} color="#dc2626" height="1.75rem" />
+                <div className="inline-flex size-[62px] items-center justify-center rounded-full border-4 border-slate-100 bg-slate-200">
+                  <Icon icon={program.icon} color="#1c2b50" height="1.75rem" />
                 </div>
                 <div>
                   <h3 className="block text-lg font-semibold text-gray-800">
