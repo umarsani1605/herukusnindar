@@ -23,7 +23,7 @@ export default function VisionMission() {
   return (
     <div className="mt-0 bg-slate-200/75 md:mt-32">
       {/* Icon Blocks */}
-      <div className="mx-auto max-w-[85rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-16 lg:pt-24">
+      <div className="mx-auto max-w-[80rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-16 lg:pt-24">
         <div className="mx-auto grid gap-10 md:grid-cols-2">
           {/* Grid */}
           <div className="flex flex-col">

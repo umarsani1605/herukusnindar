@@ -7,9 +7,9 @@ import bottomWave from "../assets/bottom-wave.svg";
 
 function Hero() {
   return (
-    <div className="relative h-[550px] overflow-hidden lg:h-dvh">
+    <div className="relative h-[550px] overflow-hidden lg:h-[700px]">
       <div className="flex h-full flex-col justify-end pb-14 pt-0 align-middle md:justify-center lg:gap-24 lg:pb-14 lg:pt-24 lg:align-middle">
-        <div className="z-20 mx-auto flex w-5/6 flex-col gap-6 lg:z-10 lg:mx-auto lg:flex lg:w-2/3 lg:max-w-[85rem] lg:flex-col lg:gap-4">
+        <div className="z-20 mx-auto flex flex-col gap-6 lg:z-10 lg:mx-auto lg:flex lg:w-2/3 lg:max-w-[80rem] lg:flex-col lg:gap-4">
           <span className="block text-2xl font-bold text-white drop-shadow-lg lg:text-5xl lg:font-bold lg:text-white">
             <em>Ketua DPRD Ngawi</em>
           </span>
@@ -47,7 +47,7 @@ function Hero() {
       ></div>
       <img className="absolute bottom-0 z-20 w-full" src={bottomWave} alt="" />
       <img
-        className="absolute bottom-0 right-0 z-10 h-[450px] lg:bottom-20 lg:right-0 lg:z-10 lg:h-[750px]"
+        className="absolute bottom-0 right-0 z-10 h-[450px] lg:bottom-20 lg:right-0 lg:z-10 lg:h-[550px]"
         src={profile}
         alt="heru-kusnindar"
       />

@@ -5,7 +5,7 @@ export default function Awards() {
   return (
     <div className="relative">
       {/* Features */}
-      <div className="mx-auto w-5/6 max-w-[85rem] overflow-hidden py-10 text-lg sm:px-6 md:pb-48 lg:px-8">
+      <div className="mx-auto max-w-[80rem] overflow-hidden py-10 text-lg sm:px-6 lg:px-8">
         {/* Grid */}
         <div className="relative lg:flex lg:items-center lg:gap-12">
           {/* End Col */}
@@ -13,7 +13,7 @@ export default function Awards() {
             <div className="space-y-6 sm:space-y-8">
               {/* Title */}
               <div className="space-y-2 md:space-y-4">
-                <div className="text-center">
+                <div className="">
                   <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
                     Prestasi
                   </h2>
@@ -48,7 +48,7 @@ export default function Awards() {
       <div>
         <img
           src={Lines}
-          className="absolute -top-[10%] -z-20 w-[200%] md:-top-[15%] md:w-[150%] lg:-top-[80%] lg:w-full"
+          className="absolute -top-[10%] -z-20 w-[200%] md:-top-[15%] md:w-[150%] lg:-top-[110%] lg:w-full"
           alt=""
         />
       </div>

@@ -25,17 +25,19 @@ export default function Footer() {
   ];
 
   return (
-    <div className="w-full bg-slate-800">
-      <footer className="mx-auto mt-auto w-full max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-slate-900">
+      <footer className="mx-auto mt-auto w-full max-w-[80rem] px-4 py-4 sm:px-6 lg:px-8">
         {/* Grid */}
         <div className="flex items-center justify-between gap-5 md:grid-cols-2">
           <div>
-            <a
-              className="flex-none text-xl font-semibold text-white focus:outline-none"
-              href="#"
-              aria-label="Brand"
-            >
-              Heru Kusnindar
+            <a className="h-full cursor-pointer py-4">
+              <img
+                src={
+                  "https://see.fontimg.com/api/renderfont4/K74zp/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/SGVydSBLdXNuaW5kYXI/motterdam.png"
+                }
+                alt=""
+                className="h-8"
+              />
             </a>
           </div>
           {/* Social Brands */}

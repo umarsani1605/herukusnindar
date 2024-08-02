@@ -35,7 +35,7 @@ export default function Programs() {
   return (
     <div className="bg-slate-200/75">
       {/* Icon Blocks */}
-      <div className="mx-auto max-w-[85rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-48">
+      <div className="mx-auto max-w-[80rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-36">
         <div className="mb-12 flex w-full flex-col items-center gap-4">
           <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
             Program

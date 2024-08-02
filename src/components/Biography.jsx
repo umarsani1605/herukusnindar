@@ -4,7 +4,7 @@ export default function Biography() {
   return (
     <>
       {/* Features */}
-      <div className="mx-auto w-5/6 max-w-[85rem] py-10 text-lg sm:px-6 md:mb-10 lg:px-8 lg:py-48">
+      <div className="mx-auto max-w-[80rem] py-10 text-lg sm:px-6 md:mb-10 lg:px-8 lg:py-24">
         {/* Grid */}
         <div className="flex flex-col-reverse md:items-center md:gap-12 lg:flex-row xl:gap-32">
           <img
@@ -18,7 +18,7 @@ export default function Biography() {
             <div className="space-y-6 sm:space-y-8">
               {/* Title */}
               <div className="space-y-2 md:space-y-4">
-                <div className="text-center">
+                <div className="">
                   <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
                     Biografi
                   </h2>
