@@ -5,7 +5,7 @@ export default function Awards() {
   return (
     <div className="relative">
       {/* Features */}
-      <div className="mx-auto max-w-[80rem] overflow-hidden py-10 text-lg sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[80rem] overflow-hidden px-6 py-10 text-lg sm:px-6 lg:px-8">
         {/* Grid */}
         <div className="relative lg:flex lg:items-center lg:gap-12">
           {/* End Col */}
