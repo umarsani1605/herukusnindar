@@ -80,7 +80,7 @@ export default function NavigationBar() {
             </div>
           </div>
           <div className="flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-slate-800 focus:outline-none focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-slate-900 focus:outline-none focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5"></span>
               <span className="sr-only">Open main menu</span>
               <Icon
@@ -96,7 +96,7 @@ export default function NavigationBar() {
         </div>
       </div>
       <DisclosurePanel className="relative sm:hidden">
-        <div className="absolute z-50 w-full space-y-1 bg-slate-800 px-2 pb-3 pt-2">
+        <div className="absolute z-50 w-full space-y-1 bg-slate-900 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
