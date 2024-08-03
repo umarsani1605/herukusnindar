@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className="relative h-[550px] overflow-hidden lg:h-[700px]">
       <div className="mx-auto flex h-full max-w-[80rem] flex-col justify-end gap-12 px-4 py-10 pb-16 text-lg sm:px-6 lg:gap-24 lg:px-8 lg:pb-36">
-        <div className="z-50 drop-shadow-2xl">
+        <div className="z-30 drop-shadow-2xl">
           <span className="block text-2xl font-bold text-white drop-shadow-lg lg:text-5xl lg:font-bold lg:text-white">
             <em>Ketua DPRD Ngawi</em>
           </span>
@@ -17,7 +17,7 @@ function Hero() {
             <em>HERU KUSNINDAR</em>
           </span>
         </div>
-        <div className="z-50 text-white">
+        <div className="z-30 text-white">
           <svg
             className="mr-2 inline"
             width="25px"

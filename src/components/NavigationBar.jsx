@@ -48,7 +48,7 @@ export default function NavigationBar() {
   return (
     <Disclosure
       as="nav"
-      className="z-100 fixed w-full bg-slate-950 shadow-blue-bold transition-all duration-300"
+      className="fixed z-50 w-full bg-slate-950 shadow-blue-bold transition-all duration-300"
     >
       <div className="mx-auto flex max-w-7xl justify-between px-6 sm:px-6 lg:px-8">
         <div className="relative flex h-16 w-full items-center justify-between">
@@ -96,7 +96,7 @@ export default function NavigationBar() {
         </div>
       </div>
       <DisclosurePanel className="relative sm:hidden">
-        <div className="absolute z-50 w-full space-y-1 bg-slate-900 px-2 pb-3 pt-2">
+        <div className="z-100 absolute w-full space-y-1 bg-slate-900 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
