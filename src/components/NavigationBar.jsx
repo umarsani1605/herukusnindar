@@ -48,7 +48,7 @@ export default function NavigationBar() {
   return (
     <Disclosure
       as="nav"
-      className="fixed z-50 w-full bg-slate-950 shadow-blue-bold transition-all duration-300"
+      className="z-100 fixed w-full bg-slate-950 shadow-blue-bold transition-all duration-300"
     >
       <div className="mx-auto flex max-w-7xl justify-between px-6 sm:px-6 lg:px-8">
         <div className="relative flex h-16 w-full items-center justify-between">

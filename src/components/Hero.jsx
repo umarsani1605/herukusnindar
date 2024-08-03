@@ -8,8 +8,8 @@ import bottomWave from "../assets/bottom-wave.svg";
 function Hero() {
   return (
     <div className="relative h-[550px] overflow-hidden lg:h-[700px]">
-      <div className="flex h-full flex-col justify-end pb-14 pt-0 align-middle md:justify-center lg:gap-24 lg:pb-14 lg:pt-24 lg:align-middle">
-        <div className="z-20 mx-auto flex flex-col gap-6 px-6 lg:z-10 lg:mx-auto lg:flex lg:max-w-[80rem] lg:flex-col lg:gap-4">
+      <div className="mx-auto flex h-full max-w-[80rem] flex-col justify-end gap-12 px-4 py-10 pb-16 text-lg sm:px-6 lg:gap-24 lg:px-8 lg:pb-36">
+        <div className="z-50 drop-shadow-2xl">
           <span className="block text-2xl font-bold text-white drop-shadow-lg lg:text-5xl lg:font-bold lg:text-white">
             <em>Ketua DPRD Ngawi</em>
           </span>
@@ -17,7 +17,7 @@ function Hero() {
             <em>HERU KUSNINDAR</em>
           </span>
         </div>
-        <div className="mx-auto hidden md:w-2/3 md:max-w-[85rem] md:cursor-pointer md:text-white lg:block lg:w-2/3 lg:max-w-[85rem] lg:cursor-pointer lg:text-white">
+        <div className="z-50 text-white">
           <svg
             className="mr-2 inline"
             width="25px"
