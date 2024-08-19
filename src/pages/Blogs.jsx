@@ -1,4 +1,4 @@
-export default function Articles() {
+export default function Blogs() {
   function truncate(str, n, useWordBoundary) {
     if (str.length <= n) {
       return str;
@@ -78,15 +78,15 @@ export default function Articles() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 py-4 pb-6 lg:grid-cols-4 lg:gap-8">
-          {articles.slice(0, 4).map((article) => (
+          {articles.map((article) => (
             <a
               key={article.title}
               className="group flex flex-col rounded-2xl border-[1px] border-slate-200 p-4 focus:outline-none"
               href="#"
             >
-              <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl bg-gray-100">
+              <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-xl bg-gray-100">
                 <img
-                  className="rounded-2xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 group-focus:scale-105"
+                  className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 group-focus:scale-105"
                   src="https://images.unsplash.com/photo-1528291954423-c0c71c12baeb?q=80&w=560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Blog Image"
                 />
@@ -103,14 +103,6 @@ export default function Articles() {
           ))}
         </div>
         {/* End Card Grid */}
-        <div className="mt-4 flex items-center justify-center">
-          <a
-            href="/blog"
-            className="relative inline-block h-fit w-fit rounded-full border border-gray-300 px-4 py-2 text-sm font-normal text-gray-600 hover:bg-gray-100 hover:transition"
-          >
-            Lebih lengkap
-          </a>
-        </div>
       </div>
       {/* End Features */}
     </>

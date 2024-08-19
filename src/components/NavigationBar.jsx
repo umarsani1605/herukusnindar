@@ -2,45 +2,40 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
 
 import { Icon } from "@iconify/react";
-import Signature from "../assets/signature.svg";
 
 export default function NavigationBar() {
   const navigation = [
     {
       name: "Beranda",
-      href: "#",
+      href: "#hero",
       active: true,
     },
     {
       name: "Biografi",
-      href: "#",
+      href: "#biography",
       active: false,
     },
     {
       name: "Prestasi",
-      href: "#",
+      href: "#awards",
       active: false,
     },
     {
       name: "Visi dan Misi",
-      href: "#",
+      href: "#vision-mission",
       active: false,
     },
     {
       name: "Program",
-      href: "#",
+      href: "#programs",
       active: false,
     },
     {
       name: "Blog",
-      href: "#",
+      href: "#blog",
       active: false,
     },
   ];
@@ -54,7 +49,7 @@ export default function NavigationBar() {
         <div className="relative flex h-16 w-full items-center justify-between">
           <div className="flex h-full w-full items-center justify-start sm:items-stretch md:justify-between">
             <div className="flex h-full flex-shrink-0 items-center">
-              <a className="h-full cursor-pointer py-4">
+              <a href="/" className="h-full cursor-pointer py-4">
                 <img
                   src={
                     "https://see.fontimg.com/api/renderfont4/K74zp/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/SGVydSBLdXNuaW5kYXI/motterdam.png"
@@ -95,7 +90,10 @@ export default function NavigationBar() {
           </div>
         </div>
       </div>
-      <DisclosurePanel className="relative sm:hidden">
+      <DisclosurePanel
+        transition
+        className="relative origin-top-right transition duration-200 ease-in-out data-[closed]:-translate-y-6 data-[closed]:opacity-0 sm:hidden"
+      >
         <div className="z-100 absolute w-full space-y-1 bg-slate-900 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton

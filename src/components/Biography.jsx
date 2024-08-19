@@ -4,7 +4,10 @@ export default function Biography() {
   return (
     <>
       {/* Features */}
-      <div className="mx-auto max-w-[80rem] px-6 py-10 text-lg sm:px-6 md:mb-10 lg:px-8 lg:py-24">
+      <div
+        id="biography"
+        className="mx-auto max-w-[80rem] px-6 py-10 text-lg sm:px-6 md:mb-10 lg:px-8 lg:py-24"
+      >
         {/* Grid */}
         <div className="flex flex-col-reverse md:items-center md:gap-12 lg:flex-row xl:gap-32">
           <img

@@ -21,7 +21,7 @@ export default function VisionMission() {
   ];
 
   return (
-    <div className="mt-0 bg-slate-200/75 md:mt-32">
+    <div id="vision-mission" className="mt-0 bg-slate-200/75 md:mt-32">
       {/* Icon Blocks */}
       <div className="mx-auto max-w-[80rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-16 lg:pt-24">
         <div className="mx-auto grid gap-10 md:grid-cols-2">
@@ -54,7 +54,7 @@ export default function VisionMission() {
             <div className="flex h-full flex-col gap-12 rounded-xl bg-white p-14 shadow-blue transition ease-in-out hover:-translate-y-1 hover:shadow-blue-bold">
               <div className="space-y-6 lg:space-y-10">
                 {missions.map((mission) => (
-                  <div className="flex gap-x-5 sm:gap-x-8">
+                  <div key={mission.name} className="flex gap-x-5 sm:gap-x-8">
                     <Icon
                       icon={mission.icon}
                       width="1.75rem"

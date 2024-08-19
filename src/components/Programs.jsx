@@ -33,9 +33,9 @@ export default function Programs() {
   ];
 
   return (
-    <div className="bg-slate-200/75">
+    <div id="programs" className="bg-slate-200/75">
       {/* Icon Blocks */}
-      <div className="mx-auto max-w-[80rem] px-4 py-10 text-lg sm:px-6 lg:px-8 lg:pb-36">
+      <div className="mx-auto max-w-[80rem] px-6 py-10 text-lg sm:px-6 md:mb-10 lg:px-8 lg:py-24">
         <div className="mb-12 flex w-full flex-col items-center gap-4">
           <h2 className="inline-block bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text py-4 text-6xl font-bold text-transparent lg:text-6xl">
             Program
@@ -43,7 +43,10 @@ export default function Programs() {
         </div>
         <div className="grid items-center gap-6 sm:grid-cols-2 md:gap-x-10 md:gap-y-10 lg:grid-cols-2">
           {programs.map((program) => (
-            <div className="size-full rounded-lg bg-white p-5 shadow-blue transition ease-in-out hover:-translate-y-1">
+            <div
+              key={program.id}
+              className="size-full rounded-lg bg-white p-5 shadow-blue transition ease-in-out hover:-translate-y-1"
+            >
               <div className="mb-3 flex items-center gap-x-4">
                 <div className="inline-flex size-[62px] items-center justify-center rounded-full border-4 border-slate-100 bg-slate-200">
                   <Icon icon={program.icon} color="#1c2b50" height="1.75rem" />
