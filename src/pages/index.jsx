@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Biography from "../components/Biography";
 import Awards from "../components/Awards";
-import Blog from "../components/Blog";
+import Blogs from "../components/Blogs";
 import VisionMission from "../components/VisionMission";
 import Programs from "../components/Programs";
 
@@ -13,7 +13,7 @@ function App() {
       <Awards />
       <VisionMission />
       <Programs />
-      <Blog />
+      <Blogs />
     </>
   );
 }

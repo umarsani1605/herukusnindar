@@ -19,6 +19,12 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blogs />,
+        // children: [
+        //   {
+        //     path: "/:id",
+        //     element: <p></p>,
+        //   },
+        // ],
       },
     ],
   },
